@@ -7,5 +7,10 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root 'static_pages#index'
+  # get 'events/index'
+  # get 'events/new'
+  # get 'events/show'
+  # get 'events/create'
+  resources :events, only: [:index, :new, :show, :create]
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
 end
