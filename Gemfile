@@ -76,3 +76,7 @@ end
 gem "mailjet", "~> 1.7"
 
 gem "devise", "~> 4.9"
+
+gem "faker", "~> 3.1"
+
+gem "table_print", "~> 1.5"
